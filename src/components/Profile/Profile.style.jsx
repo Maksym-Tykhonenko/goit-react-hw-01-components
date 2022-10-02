@@ -9,8 +9,8 @@ export const Profail = styled.div`
 
 export const ProfailDescription = styled.div`
     background: #f6f3f3;  
-         border: 1px solid skyblue;
-  border-radius: 5px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
 `;
 
 export const Avatar = styled.img`

@@ -1,5 +1,12 @@
-
-import {Table, TableThead, TableRow, TableHeader, TableBody, TableData} from './TransactionHistory.style';
+import PropTypes from 'prop-types';
+import {
+     Table,
+     TableThead,
+     TableRow,
+     TableHeader,
+     TableBody,
+     TableData
+} from './TransactionHistory.style';
 
 export const TransactionHistory = ({items}) => {
     return (
@@ -26,4 +33,8 @@ export const TransactionHistory = ({items}) => {
             </TableBody>
         </Table>
     )
+}
+
+TransactionHistory.propTypes = {
+    transactions: PropTypes.arrayOf(PropTypes.object.isRequired),
 }
