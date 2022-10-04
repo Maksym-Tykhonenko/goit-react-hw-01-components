@@ -11,7 +11,7 @@ import {
 export const Statistics = ({ title, stats }) => {
   return (
     <StatBlock>
-      {title !== undefined && <StatTitle>{title}</StatTitle>}
+      {title && <StatTitle>{title}</StatTitle>}
 
       <StatList>
         {stats.map(({ id, label, percentage }) => {
